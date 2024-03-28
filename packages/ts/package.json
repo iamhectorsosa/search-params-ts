@@ -29,12 +29,16 @@
   ],
   "scripts": {
     "build": "bunchee --dts",
-    "dev": "bunchee --dts --watch"
+    "dev": "bunchee --dts --watch",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
-    "typescript": "^5.4.3",
-    "bunchee": "^5.0.0"
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "bunchee": "^5.0.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.3"
   },
   "packageManager": "bun@1.0.35"
 }
