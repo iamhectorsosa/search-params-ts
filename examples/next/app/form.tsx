@@ -58,6 +58,10 @@ export const Form: React.FC = () => {
       framework: formData.get("framework"),
     });
 
+    if (output.success) {
+      setQuery(output.data);
+    }
+
     return !output.success
       ? toast.error("Something went wrong")
       : toast.success(JSON.stringify(output.data));
