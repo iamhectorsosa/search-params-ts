@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useSearchParams } from "@search-params/core";
+import { useSearchParams } from "@search-params/ts";
 import { z } from "zod";
 import {
   useRouter,

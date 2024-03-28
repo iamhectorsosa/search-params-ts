@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['@search-params/core']
+  transpilePackages: ["@search-params/ts"],
 };
 
 export default nextConfig;
