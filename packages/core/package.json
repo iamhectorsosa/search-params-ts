@@ -28,7 +28,7 @@
     "dist"
   ],
   "scripts": {
-    "bundle": "bunchee --dts",
+    "build": "bunchee --dts",
     "dev": "bunchee --dts --watch"
   },
   "devDependencies": {
