@@ -37,7 +37,8 @@ const schema = z.object({
       z.literal("astro"),
       z.literal("nuxt"),
     ])
-    .optional(),
+    .optional()
+    .catch("next"),
 });
 
 export const Form: React.FC = () => {
