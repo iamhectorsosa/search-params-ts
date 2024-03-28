@@ -1,0 +1,39 @@
+{
+  "name": "@search-params/core",
+  "version": "0.0.0",
+  "description": "Read and update URLSearchParams with full type-safety",
+  "license": "MIT",
+  "type": "module",
+  "author": {
+    "name": "Hector Sosa",
+    "url": "https://hectorsosa.me"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "URL",
+    "params"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "bundle": "bunchee --dts",
+    "dev": "bunchee --dts --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3"
+  },
+  "packageManager": "bun@1.0.35"
+}

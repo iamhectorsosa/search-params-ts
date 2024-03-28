@@ -1,0 +1,19 @@
+{
+  "name": "search-params",
+  "private": true,
+  "workspaces": [
+    "examples/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev"
+  },
+  "devDependencies": {
+    "bunchee": "^5.0.0",
+    "turbo": "^1.13.0"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  }
+}
