@@ -74,6 +74,7 @@ export function useSearchParams<TSearchSchema extends URLSearchParams>({
   }
 
   function clearQuery() {
+    console.log("ss");
     const parsedParams = _parseQuery({});
     router.push(_stringify(parsedParams));
   }

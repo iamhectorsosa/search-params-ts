@@ -17,26 +17,25 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.js"
     }
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "bunchee --dts",
-    "dev": "bunchee --dts --watch",
+    "bundle": "bun build src/index.ts --format=esm --outdir dist",
+    "emitTs": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "build": "bun bundle & bun emitTs",
+    "dev": "bun bundle --watch & bun emitTs --watch",
     "lint": "eslint ."
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
-    "bunchee": "^5.0.0",
     "eslint": "^8.57.0",
     "typescript": "^5.4.3"
   },
