@@ -3,3 +3,6 @@
 
 # Turbo
 .turbo
+
+# Env
+.env
