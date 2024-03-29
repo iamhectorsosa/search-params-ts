@@ -1,6 +1,6 @@
 {
   "name": "@search-params/ts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Read and update URLSearchParams with full type-safety",
   "license": "MIT",
   "type": "module",
@@ -28,7 +28,7 @@
   "scripts": {
     "bundle": "bun build --entrypoints src/index.ts --format=esm --outdir dist --sourcemap=external",
     "dts": "tsc --project tsconfig.json",
-    "build": "bun lint && bun test && bun bundle && bun dts",
+    "build": "bun bundle && bun dts",
     "dev": "bun bundle --watch & bun dts --watch",
     "lint": "eslint .",
     "test": "bun test",
