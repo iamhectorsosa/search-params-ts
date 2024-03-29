@@ -1,6 +1,6 @@
 {
   "name": "@search-params/ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Read and update URLSearchParams with full type-safety",
   "license": "MIT",
   "type": "module",
