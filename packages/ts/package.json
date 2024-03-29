@@ -26,14 +26,16 @@
     "dist"
   ],
   "scripts": {
-    "bundle": "bun build src/index.ts --format=esm --outdir dist",
-    "emitTs": "tsc --declaration --emitDeclarationOnly --outDir dist",
-    "build": "bun bundle & bun emitTs",
-    "dev": "bun bundle --watch & bun emitTs --watch",
-    "lint": "eslint ."
+    "bundle": "bun build --entrypoints src/index.ts --format=esm --outdir dist --sourcemap=external",
+    "dts": "tsc --project tsconfig.json",
+    "build": "bun lint && bun test && bun bundle && bun dts",
+    "dev": "bun bundle --watch & bun dts --watch",
+    "lint": "eslint .",
+    "test": "bun test",
+    "test:watch": "bun test --watch"
   },
   "devDependencies": {
-    "@types/node": "^20.11.30",
+    "@types/bun": "^1.0.11",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
     "eslint": "^8.57.0",
