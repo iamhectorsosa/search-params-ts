@@ -1,12 +1,17 @@
 {
   "name": "@search-params/ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Read and update URLSearchParams with full type-safety",
   "license": "MIT",
   "type": "module",
   "author": {
     "name": "Hector Sosa",
     "url": "https://hectorsosa.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamhectorsosa/search-params-ts",
+    "directory": "packages/ts"
   },
   "keywords": [
     "react",
